@@ -1,0 +1,190 @@
+// UserRouter
+
+###
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+     "email": "admin@teste.com" ,
+     "password": "123456a"
+}
+
+###
+POST http://localhost:3003/users
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRkYTc4ZGI4LThjMzgtNGYyZS05ZWJmLWFhMjFlMjU5MDUyNSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMjMxMTI5OCwiZXhwIjoxNjMyMzE0ODk4fQ.BFnVTmCq89n7rUz6zZ00ZgFG92laoYmnsS3wvvG-8IY
+
+{
+   "name": "rodrigo",
+   "email": "rodrigobbuquera@gmail.com" 
+}
+###
+GET http://localhost:3003/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTM5MTMxMSwiZXhwIjoxNjMxNDI3MzExfQ.lg_wfSp5XJKer-k0UI1AhdpB5wYrbyZVGQYgMsuY7-o
+###
+GET http://localhost:3003/users/list
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTM5MTMxMSwiZXhwIjoxNjMxNDI3MzExfQ.lg_wfSp5XJKer-k0UI1AhdpB5wYrbyZVGQYgMsuY7-o
+###
+GET http://localhost:3003/users/44fe0c71-776e-4bce-840e-24f00624aca0
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTM5MTMxMSwiZXhwIjoxNjMxNDI3MzExfQ.lg_wfSp5XJKer-k0UI1AhdpB5wYrbyZVGQYgMsuY7-o
+### 
+PUT http://localhost:3003/users/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFlZGMyNGEwLWZkODYtNDNlMi05MGE5LWE1YzAyM2I4YmU0OCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMjE1MzExNCwiZXhwIjoxNjMyMTg5MTE0fQ.Sh-MmVvMTcZW5bDMG5iIjo_k1sx9pCUpZulb447Lfr8
+
+{
+   "name": "Mar",
+   "email": "marian2a22@teste.com",
+   "password": "4svuu"
+}
+###
+PUT http://localhost:3003/users/14eeaebd-0271-4b6f-937d-8cfacd45b00c
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTM5MTMxMSwiZXhwIjoxNjMxNDI3MzExfQ.lg_wfSp5XJKer-k0UI1AhdpB5wYrbyZVGQYgMsuY7-o
+
+{
+   "name": "Mar",
+   "email": "marian2a@teste.com",
+   "password": "4svuu"
+}
+###
+DELETE http://localhost:3003/users/35b78c0f-7e82-4e2f-98fa-fc895e698624
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTM5MTMxMSwiZXhwIjoxNjMxNDI3MzExfQ.lg_wfSp5XJKer-k0UI1AhdpB5wYrbyZVGQYgMsuY7-o
+
+###
+PUT http://localhost:3003/users/validaton
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUxMjhhYzFmLTg1ZmYtNDM1Zi1hYjk4LTFkYzNmYjZlZTEwNyIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNjMyMzExMzYyLCJleHAiOjE2MzIzMTQ5NjJ9.psiFFW5WhIiOj3rtrDSDUlRatSv91UW4AG0hBpEEvkU
+###
+PUT http://localhost:3003/users/changePassword
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUxMjhhYzFmLTg1ZmYtNDM1Zi1hYjk4LTFkYzNmYjZlZTEwNyIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNjMyMzExMzYyLCJleHAiOjE2MzIzMTQ5NjJ9.psiFFW5WhIiOj3rtrDSDUlRatSv91UW4AG0hBpEEvkU
+
+{
+"validationCode": "b8x2o",
+"password": "senha"
+}
+
+// PlanRouter
+
+###
+POST http://localhost:3003/plans
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTg4MTE5MSwiZXhwIjoxNjMxOTE3MTkxfQ.vIwjVegriFTfjNMheQZ8oI-e4OVbmfw1G2G84YSZoEM
+Content-Type: application/json
+
+
+{
+   "type": "Semestral",
+   "frequency": "2X",
+   "planStarted": "2021-09-10",
+   "userId": "5b5d7dba-3700-420b-a3c4-3276b1bb8cc7"
+}
+###
+GET http://localhost:3003/plans/list
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFlZGMyNGEwLWZkODYtNDNlMi05MGE5LWE1YzAyM2I4YmU0OCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTk5OTk0MSwiZXhwIjoxNjMyMDM1OTQxfQ.N0zumcEQEIpC7wkKeoZ59TKqY46-HVEuP5Di1mX6c7Q
+
+###
+GET http://localhost:3003/plans/5b5d7dba-3700-420b-a3c4-3276b1bb8cc7?status=inactive
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFlZGMyNGEwLWZkODYtNDNlMi05MGE5LWE1YzAyM2I4YmU0OCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTk5OTk0MSwiZXhwIjoxNjMyMDM1OTQxfQ.N0zumcEQEIpC7wkKeoZ59TKqY46-HVEuP5Di1mX6c7Q
+
+###
+PUT http://localhost:3003/plans/ac5d0abe-b62c-42d7-b98e-3b07ad837563
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFlZGMyNGEwLWZkODYtNDNlMi05MGE5LWE1YzAyM2I4YmU0OCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMjAwMjkyNSwiZXhwIjoxNjMyMDM4OTI1fQ.oANMRNhEdkyba-v3LI75e3AWnBjlesf7grMBHjxnAdA
+
+
+{
+   "type": "Trimestral",
+   "frequency": "2X",
+   "planStarted": "2021-08-12",
+   "planEnds": "2022-10-15",
+   "totalClasses": 16,
+   "avaliableClasses": 6,
+   "planId": "a5bacff0-484b-4ffa-bfb3-72328a511850"
+}
+
+###
+PUT http://localhost:3003/plans/status/97b0ccce-5c65-410a-9b9d-53d73348f34b
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFlZGMyNGEwLWZkODYtNDNlMi05MGE5LWE1YzAyM2I4YmU0OCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMjAwMjkyNSwiZXhwIjoxNjMyMDM4OTI1fQ.oANMRNhEdkyba-v3LI75e3AWnBjlesf7grMBHjxnAdA
+
+###
+PUT http://localhost:3003/plans/classes/55ad88e5-e38e-4e37-be3c-c5e91e056285?action=remove
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFlZGMyNGEwLWZkODYtNDNlMi05MGE5LWE1YzAyM2I4YmU0OCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMjE1MzExNCwiZXhwIjoxNjMyMTg5MTE0fQ.Sh-MmVvMTcZW5bDMG5iIjo_k1sx9pCUpZulb447Lfr8
+
+###
+DELETE  http://localhost:3003/plans/2c4ec8b4-b3da-43fd-b693-66f65f999340
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTg4MTE5MSwiZXhwIjoxNjMxOTE3MTkxfQ.vIwjVegriFTfjNMheQZ8oI-e4OVbmfw1G2G84YSZoEM
+
+// ClassRouter
+
+###
+GET http://localhost:3003/classes
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTQ3Mjk1OSwiZXhwIjoxNjMxNTA4OTU5fQ.UEWzj7ddfWDWwdcAGqMH_f3cb9oTG3k4jP-ScQnBNyE
+###
+GET http://localhost:3003/classes/188d2df2-4052-46c6-8f6b-73afb20cc5ca
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTQ3Mjk1OSwiZXhwIjoxNjMxNTA4OTU5fQ.UEWzj7ddfWDWwdcAGqMH_f3cb9oTG3k4jP-ScQnBNyE
+###
+POST http://localhost:3003/classes
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTQ3MzM3NCwiZXhwIjoxNjMxNTA5Mzc0fQ.WikbMQD5KvYvs0hNYQWT3hJFgzO1gFHfg5pjjhPQe6g
+
+{
+   "name": "Vinaysa",
+   "startingDate": "10-22-2021",
+   "day": "Sexta",
+   "time": "12:00",
+   "teacher": "Rodrigo"
+}
+###
+PUT http://localhost:3003/classes/Vinyasa-Sábado-09:00
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTQ3MzM3NCwiZXhwIjoxNjMxNTA5Mzc0fQ.WikbMQD5KvYvs0hNYQWT3hJFgzO1gFHfg5pjjhPQe6g
+
+{
+   "name": "Hatha",
+   "startingDate": "10-02-2021",
+   "day": "Quinta",
+   "time": "19:00",
+   "teacher": "Louize"
+}
+###
+DELETE http://localhost:3003/classes/Vinyasa-Sábado-09:00
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTQ3MzM3NCwiZXhwIjoxNjMxNTA5Mzc0fQ.WikbMQD5KvYvs0hNYQWT3hJFgzO1gFHfg5pjjhPQe6g
+
+
+// CheckinRouter
+
+
+###
+GET http://localhost:3003/checkins/class/188d2df2-4052-46c6-8f6b-73afb20cc5ca
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTUzMzY0NCwiZXhwIjoxNjMxNTY5NjQ0fQ.F20SXmjKJRQoUQzOgEnrhMVXE5IVVP5TIE-MVwsVIAE
+###
+GET http://localhost:3003/checkins/plan/ac5d0abe-b62c-42d7-b98e-3b07ad837563
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTUzMzY0NCwiZXhwIjoxNjMxNTY5NjQ0fQ.F20SXmjKJRQoUQzOgEnrhMVXE5IVVP5TIE-MVwsVIAE
+###
+POST http://localhost:3003/checkins
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTUzMzY0NCwiZXhwIjoxNjMxNTY5NjQ0fQ.F20SXmjKJRQoUQzOgEnrhMVXE5IVVP5TIE-MVwsVIAE
+
+{
+   "classId": "188d2df2-4052-46c6-8f6b-73afb20cc5ca",
+   "planId": "ac5d0abe-b62c-42d7-b98e-3b07ad837563"
+}
+###
+PUT http://localhost:3003/checkins/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTUzMzY0NCwiZXhwIjoxNjMxNTY5NjQ0fQ.F20SXmjKJRQoUQzOgEnrhMVXE5IVVP5TIE-MVwsVIAE
+
+{
+   "classId": "188d2df2-4052-46c6-8f6b-73afb20cc5ca",
+   "planId": "ac5d0abe-b62c-42d7-b98e-3b07ad837563"
+}
+###
+DELETE http://localhost:3003/checkins
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYjgyNDE4LTU4NTQtNDQzOC1hOGE5LWI1Y2IyMDk0MTliMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzMTUzMzY0NCwiZXhwIjoxNjMxNTY5NjQ0fQ.F20SXmjKJRQoUQzOgEnrhMVXE5IVVP5TIE-MVwsVIAE
+
+{
+   "classId": "188d2df2-4052-46c6-8f6b-73afb20cc5ca",
+   "planId": "ac5d0abe-b62c-42d7-b98e-3b07ad837563"
+}
+

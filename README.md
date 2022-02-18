@@ -1,1 +1,0 @@
-# YGM-backend-MySQL
